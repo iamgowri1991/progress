@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import ProgressComponent from "./components/progress";
+ 
 
-function App() {
+export default function App() {
+  const [value, setValue] = useState(0);
+
+  // useEffect(() => {
+  //   let a = window.setInterval(() => {
+  //     setValue((prev) => prev + 5);
+  //   }, 100);
+  //   return () => window.clearInterval(a);
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React 123
-        </a>
-      </header>
+    <div className="app">
+      <div> Progress Bar</div>
+     <button onClick={()=>setValue(prev => prev+5)}> Increment by 5 </button>
+     <button  onClick={()=>setValue(prev => prev-5)}> Decrement by 5 </button>
+      <ProgressComponent value={value} />
     </div>
   );
 }
-
-export default App;
