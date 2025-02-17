@@ -1,58 +1,16 @@
-.app {
+
+.heading-container {
          display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap:7px;
 }
 
-
-.progress {
-         width: 500px;
-         height: 20px;
-         border: 1px solid #000;
-         border-radius: 15px;
-         display: flex;
-         background-color: grey;
-         display: relative;
-         overflow: hidden;
-         position: relative;
-}
-
-
-.progress span {
-         display: flex;
-         justify-content: center;
-         width: 100%;
-         position: absolute;
-      
-}
-
-
-
-.progress div {
-         height: 100%;
-         background-color: green;
-}
-
-.result-container {
-         width: 500px;
-         margin:auto;
-         border:1px solid black;
+.heading {
          padding: 5px;
-         text-align: left;
-         max-height: 500px;
-         overflow: scroll;
+         border:1px solid black;
 }
 
-.result {
-         display:block;
-         padding:3px;
-
-        
-}
-
-.result:hover {
-      background-color: beige;
-      cursor: pointer;
-        
+.tab-body{
+         display: flex;
+         border:1px solid black;
+         height: 200px;
+         padding:5px;
 }
